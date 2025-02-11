@@ -108,8 +108,8 @@ VID_RES = (VID_WIDTH, VID_HEIGHT)
 
 # Image Capture Resolution
 # Take a Picture, 12MP: 4056x3040
-PIC_WIDTH = 4056
-PIC_HEIGHT = 3040
+PIC_WIDTH = 1920 #KEEF
+PIC_HEIGHT = 1080
 PIC_RES = (PIC_WIDTH, PIC_HEIGHT)
 
 # Monitor Resolution (The one you're using to look at this)
@@ -1610,7 +1610,7 @@ def main():
     # Height
     # Set Camera Settings Button
     # TODO: Change default Camera Rotation to settings file if it exists.
-    tab_3_layout = [ [sg.Text("Camera Rotation (in Degrees):"), sg.InputText("270", size=(10, 1), enable_events=True, key=CAMERA_ROTATION_KEY)],
+    tab_3_layout = [ [sg.Text("Camera Rotation (in Degrees):"), sg.InputText("180", size=(10, 1), enable_events=True, key=CAMERA_ROTATION_KEY)],
                      [sg.Text("Set Image Capture Resolution:")],
                      [sg.Text("Pic Width (in pixels):"), sg.InputText(PIC_WIDTH, size=(10, 1), enable_events=True, key=PIC_WIDTH_KEY)],
                      [sg.Text("Pic Height (in pixels):"),sg.InputText(PIC_HEIGHT, size=(10, 1), enable_events=True, key=PIC_HEIGHT_KEY)],
