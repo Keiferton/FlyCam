@@ -41,7 +41,7 @@ Changelog
 05 Jun 2021: Added in Experiment Thread, can now run GUI and Experiment at the same time.
 28 Apr 2021: Changed Experiment variables into CONSTANTS
 26 Apr 2021: Added in 2 Tabs: Start Experiment and Movement
-18 Apr 2021: Started Changelog, Allow user to input their own GCode.
+18 Apr 2021: Started Changelog, Allow user to input their own GCode..
 
 """
 
