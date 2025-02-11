@@ -22,13 +22,15 @@ Future Features:
 -Display Current Location in GUI
 
 Current TODO List:
--Get Current Location Mananger (runs it twice to get location)
+-Get Current Location Manager (runs it twice to get location)
 -Put GUI Keys/Text as Constants
 -Experiment with Tabs
  Source: https://github.com/PySimpleGUI/PySimpleGUI/blob/master/DemoPrograms/Demo_Tabs_Simple.py
          https://csveda.com/creating-tabbed-interface-using-pysimplegui/
 
 Changelog
+01 Jan 2025: Replace PySimpleGUI with FreeSimpleGUI
+10 Oct 2023: Created easy_rot quick access camera rotation variable
 24 Aug 2022: User can choose where to save experiment folder (CAM tab)
 16 May 2022: Removed PiRGBArray Camera Preview and implemented PiCamera Preview + hacks for window control!
 25 Apr 2022: Fixed restart bug, can now run multiple experiments without restarting GUI!
