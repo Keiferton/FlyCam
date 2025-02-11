@@ -22,13 +22,15 @@ Future Features:
 -Display Current Location in GUI
 
 Current TODO List:
--Get Current Location Mananger (runs it twice to get location)
+-Get Current Location Manager (runs it twice to get location)
 -Put GUI Keys/Text as Constants
 -Experiment with Tabs
  Source: https://github.com/PySimpleGUI/PySimpleGUI/blob/master/DemoPrograms/Demo_Tabs_Simple.py
          https://csveda.com/creating-tabbed-interface-using-pysimplegui/
 
 Changelog
+01 Jan 2025: Replace PySimpleGUI with FreeSimpleGUI
+10 Oct 2023: Created easy_rot quick access camera rotation variable
 24 Aug 2022: User can choose where to save experiment folder (CAM tab)
 16 May 2022: Removed PiRGBArray Camera Preview and implemented PiCamera Preview + hacks for window control!
 25 Apr 2022: Fixed restart bug, can now run multiple experiments without restarting GUI!
@@ -39,7 +41,7 @@ Changelog
 05 Jun 2021: Added in Experiment Thread, can now run GUI and Experiment at the same time.
 28 Apr 2021: Changed Experiment variables into CONSTANTS
 26 Apr 2021: Added in 2 Tabs: Start Experiment and Movement
-18 Apr 2021: Started Changelog, Allow user to input their own GCode.
+18 Apr 2021: Started Changelog, Allow user to input their own GCode..
 
 """
 
@@ -106,8 +108,8 @@ VID_RES = (VID_WIDTH, VID_HEIGHT)
 
 # Image Capture Resolution
 # Take a Picture, 12MP: 4056x3040
-PIC_WIDTH = 4056
-PIC_HEIGHT = 3040
+PIC_WIDTH = 1920 #KEEF
+PIC_HEIGHT = 1080
 PIC_RES = (PIC_WIDTH, PIC_HEIGHT)
 
 # Monitor Resolution (The one you're using to look at this)
@@ -1608,7 +1610,7 @@ def main():
     # Height
     # Set Camera Settings Button
     # TODO: Change default Camera Rotation to settings file if it exists.
-    tab_3_layout = [ [sg.Text("Camera Rotation (in Degrees):"), sg.InputText("270", size=(10, 1), enable_events=True, key=CAMERA_ROTATION_KEY)],
+    tab_3_layout = [ [sg.Text("Camera Rotation (in Degrees):"), sg.InputText("180", size=(10, 1), enable_events=True, key=CAMERA_ROTATION_KEY)],
                      [sg.Text("Set Image Capture Resolution:")],
                      [sg.Text("Pic Width (in pixels):"), sg.InputText(PIC_WIDTH, size=(10, 1), enable_events=True, key=PIC_WIDTH_KEY)],
                      [sg.Text("Pic Height (in pixels):"),sg.InputText(PIC_HEIGHT, size=(10, 1), enable_events=True, key=PIC_HEIGHT_KEY)],
